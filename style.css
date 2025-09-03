@@ -1,0 +1,129 @@
+
+
+/* Общие стили для всего сайта */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Стили для заголовков */
+h1, h2, h5 {
+    font-weight: 700;
+    color: #4a4949; /* Bootstrap primary blue */
+}
+
+/* Заголовок в секции приветствия */
+section.container.text-center h1 {
+    margin-bottom: 1rem;
+}
+
+/* Отступы для секций */
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Кнопки "Подробнее" */
+.btn-primary {
+    background-color: #1a1918;
+    border-color: #171716;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+
+/* Карточки животных */
+.card {
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+/* Секция обратной связи */
+#help form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+}
+
+#help label {
+    font-weight: 600;
+}
+
+/* Карусель */
+.carousel-inner img {
+    border-radius: 0.5rem;
+}
+
+/* Навбар */
+.navbar {
+    box-shadow: 0 3px 8px rgb(0 0 0 / 0.15);
+}
+
+.navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Responsive image */
+.img-fluid.w-100 {
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Мобильные отступы */
+
+@media (max-width: 767px) {
+    section.container.text-center {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #help form {
+        padding: 1rem;
+    }
+}
+.carousel-item img {
+  max-height: 300px;      /* Ограничивает высоту изображения */
+  object-fit: cover;      /* Сохраняет соотношение сторон, обрезая изображение при необходимости */
+}
+
+.carousel-inner {
+  max-width: 600px;       /* Ограничивает ширину карусели */
+  margin: 0 auto;         /* Центрирует карусель */
+}
+.ff {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.sss {
+    background-color: rgb(25, 25, 26);
+    height: 2px;
+    opacity: 70%;
+    margin: 100px ;
+}
+
+.footer {
+    background-color: #171716;
+    height: 175px;
+    opacity: 70%;
+    color: antiquewhite;
+    text-align: center;
+}
